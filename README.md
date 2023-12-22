@@ -24,33 +24,85 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
+- Set up resources in Azure
+- Ensure Connectivity between the client and Domain Controller
+- Install Active Directory
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
 
+SET UP RESOURCES IN AZURE
+<p>
+1. Create the Domain Controller VM (Windows Server 2022) named “DC-1”.
+<img src="https://i.imgur.com/cEGxBGS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+2. Set Domain Controller’s NIC Private IP address to be static.
+</p>
+<img src="https://i.imgur.com/e5BUqgf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qgzlRt4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/8OaIpeF.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/T0tmMKo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+3. Create the Client VM (Windows 10) named “Client-1”. 
+<img src="https://i.imgur.com/kVbF486.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+ENSURE CONNECTIVITY BETWEEN THE CLIENT AND DOMAIN CONTROLLER
+<br />
+<p>
+4. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <10.0.0.5> (perpetual ping).  
+<img src="https://i.imgur.com/rfpvju4.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+5. Login to the Domain Controller and enable ICMPv4 in on the local windows Firewal. 
+<img src="https://i.imgur.com/MVLQoJq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/6ryPaC7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+6. Check back at Client-1 to see the ping succeed.
+<img src="https://i.imgur.com/50MqGdv.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+INSTALL ACTIVE DIRECTORY
+</p>
+7. Login to DC-1 and install Active Directory Domain Services
+<p>
+<img src="https://i.imgur.com/X0tBXrO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+</p>
+8. Add roles and features
+<img src="https://i.imgur.com/lv0FZDG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/q46NGa3.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/S0U6AUH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vjjtLMm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/cX9NMml.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/lv0FZDG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+  
+</p>
+<br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
+<p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
