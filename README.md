@@ -27,7 +27,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set up resources in Azure
 - Ensure Connectivity between the client and Domain Controller
 - Install Active Directory
-- Step 4
+- Joint Client-1 to your domain (mydomain.com)
+- Setup Remote Desktop for non-administrative users on Client-1
+- Create a bunch of additional users and attempt to log into client-1 with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -70,7 +72,7 @@ INSTALL ACTIVE DIRECTORY
 <img src="https://i.imgur.com/S0U6AUH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/vjjtLMm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/cX9NMml.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/2ZJccyp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2ZJccyp.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/ghAeNt3.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/jOCwitD.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/SAnmanx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -90,24 +92,45 @@ INSTALL ACTIVE DIRECTORY
 <img src="https://i.imgur.com/A37kaNl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+CREATE AN ADMIN AND NORMAL USER ACCOUNT IN ACTIVE DIRECTORY     
 </p>
-<p>
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+8. In Active Directory Users and Computers, create two folders called "_EMPLOYEES" and "_ADMINS"     
+<img src="https://i.imgur.com/i1mCvqH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OfqCr4W.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ucwdE44.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4ZHQQ7p.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+9. Create a new employee named "fred meka" with the username of "fred_admin"
+<img src="https://i.imgur.com/ZXCGwTr.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ndl8yyP.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JkBa8ku.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/8HtyXcG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oqqVZV4.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+10. Add fred_admin to the "Domain Admins" Security Group      
+<img src="https://i.imgur.com/U4OSzQt.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/V9z3CBi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/kZgd9KO.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nJBJ3Qf.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uMb8gOd.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5daK5z7.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+11. Log off as "labuser" on DC-1 Remote Desktop connection and log back in as "mydomain.com\fred_admin"
+<img src="https://i.imgur.com/61VjoBa.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/px7vTJS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+JOINT CLIENT-1 TO YOUR DOMAIN (MYDOMAIN.COM)     
+</p>
+12. From Azure Portal, set client-1 DNS setting to DC-1 private IP Address: 10.0.0.4 and restart Client-1
+<img src="https://i.imgur.com/0xKZ37v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oO6CYyQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EYv0EKk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3DsrDBi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+13. Login to Client-1 (Remote Desktop) as labuser and join it to the domain (computer will restart)
+     a. System -> 
+<img src="https://i.imgur.com/nujEw2x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <p>
