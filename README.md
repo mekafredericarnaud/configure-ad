@@ -36,9 +36,7 @@ SET UP RESOURCES IN AZURE
 1. Create the Domain Controller VM (Windows Server 2022) named “DC-1”.
 <img src="https://i.imgur.com/cEGxBGS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
 2. Set Domain Controller’s NIC Private IP address to be static.
-</p>
 <img src="https://i.imgur.com/e5BUqgf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/qgzlRt4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/8OaIpeF.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
@@ -49,8 +47,7 @@ SET UP RESOURCES IN AZURE
 </p>
 <br />
 ENSURE CONNECTIVITY BETWEEN THE CLIENT AND DOMAIN CONTROLLER
-<br />
-<p>
+</p>
 4. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <10.0.0.5> (perpetual ping).  
 <img src="https://i.imgur.com/rfpvju4.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
@@ -65,17 +62,32 @@ ENSURE CONNECTIVITY BETWEEN THE CLIENT AND DOMAIN CONTROLLER
 INSTALL ACTIVE DIRECTORY
 </p>
 7. Login to DC-1 and install Active Directory Domain Services
-<p>
 <img src="https://i.imgur.com/X0tBXrO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 </p>
-8. Add roles and features
+     a. Add roles and features
 <img src="https://i.imgur.com/lv0FZDG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/q46NGa3.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/S0U6AUH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/vjjtLMm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/cX9NMml.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/lv0FZDG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-  
+<img src="https://i.imgur.com/2ZJccyp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ghAeNt3.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jOCwitD.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SAnmanx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/IolZQ9Q.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+     b. Promote as a DC: Setup a new forest as mydomain.com   
+<img src="https://i.imgur.com/tpAG3tU.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5dSNftd.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mIgNGO2.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gGhAeMf.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vqhAOB6.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/fLTA7yx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nNs22ex.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wxxxRoG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+     c. Restart and then log back into DC-1 as user: mydomain.com\labuser
+<img src="https://i.imgur.com/A37kaNl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <p>
