@@ -97,45 +97,45 @@ This tutorial outlines the implementation of on-premises Active Directory within
 8. In Active Directory Users and Computers, create two folders called "_EMPLOYEES" and "_ADMINS"     
 <img src="https://i.imgur.com/i1mCvqH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/OfqCr4W.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/ucwdE44.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/4ZHQQ7p.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ucwdE44.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4ZHQQ7p.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 9. Create a new employee named "fred meka" with the username of "fred_admin"
 <img src="https://i.imgur.com/ZXCGwTr.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/ndl8yyP.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/JkBa8ku.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/8HtyXcG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ndl8yyP.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JkBa8ku.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/8HtyXcG.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/oqqVZV4.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 10. Add fred_admin to the "Domain Admins" Security Group      
 <img src="https://i.imgur.com/U4OSzQt.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/V9z3CBi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/kZgd9KO.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/nJBJ3Qf.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/uMb8gOd.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/5daK5z7.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/V9z3CBi.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/kZgd9KO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nJBJ3Qf.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uMb8gOd.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5daK5z7.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 11. Log off as "labuser" on DC-1 Remote Desktop connection and log back in as "mydomain.com\fred_admin"
 <img src="https://i.imgur.com/61VjoBa.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/px7vTJS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-- JOINT CLIENT-1 TO YOUR DOMAIN (MYDOMAIN.COM)     
+- JOIN CLIENT-1 TO YOUR DOMAIN (MYDOMAIN.COM)     
 </p>
 12. From Azure Portal, set client-1 DNS setting to DC-1 private IP Address: 10.0.0.4 and restart Client-1
-<img src="https://i.imgur.com/0xKZ37v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/oO6CYyQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/0xKZ37v.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oO6CYyQ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/EYv0EKk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/3DsrDBi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 13. Login to Client-1 (Remote Desktop) as labuser and join it to the domain (computer will restart)
 </p>  
      a. System -> Renamed this PC (Advanced) -> Change -> Member of Domain (mydomain.com) then enter name and password
-<img src="https://i.imgur.com/nujEw2x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/c6euuEX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/dAntXCQ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/haOKmPk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-     b. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computer   
+<img src="https://i.imgur.com/nujEw2x.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/c6euuEX.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dAntXCQ.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/haOKmPk.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+     b. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers   
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br /> 
