@@ -63,7 +63,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 - INSTALL ACTIVE DIRECTORY
 </p>
-7. Login to DC-1 and install Active Directory Domain Services
+7. Login to DC-1 and install Active Directory Domain Services, open Server Manager.
 <img src="https://i.imgur.com/X0tBXrO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 </p>
      a. Add roles and features
@@ -74,6 +74,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/cX9NMml.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/2ZJccyp.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/ghAeNt3.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/keNJPH1.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>  
 <img src="https://i.imgur.com/jOCwitD.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/SAnmanx.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/IolZQ9Q.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -135,8 +136,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/c6euuEX.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/dAntXCQ.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/haOKmPk.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
-     b. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers   
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+     b. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers inside the "computers" container on the root of the domain   
+<img src="https://i.imgur.com/EVDpy3q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br /> 
 - SETUP REMOTE DESKTOP FOR NON-ADMINISTRATIVE USERS ON CLIENT-1
