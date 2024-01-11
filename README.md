@@ -58,7 +58,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/6ryPaC7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 6. Check back at Client-1 to see the ping succeed.
-<img src="https://i.imgur.com/50MqGdv.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/HA7dD6M.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 - INSTALL ACTIVE DIRECTORY
